@@ -11,18 +11,32 @@
             align-items: center;
             height: 100vh;
             background-color: white;
-            position: relative; /* Necessary for absolute positioning of children */
+            position: relative;
             font-family: sans-serif;
         }
 
-        /* Main centered text */
+        /* Container for the main center content */
+        .header-container {
+            text-align: center;
+        }
+
         .centered-text {
             color: black;
             font-size: 2rem;
             font-weight: bold;
+            margin: 0;
         }
 
-    
+        /* Small text under Apex-domain */
+        .sub-text {
+            font-size: 0.75rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: block;
+            margin-top: 5px;
+        }
+
         .bottom-right-text {
             position: absolute;
             bottom: 20px;
@@ -35,8 +49,11 @@
 </head>
 <body>
 
-    <div class="centered-text">
-        Apex-domain
+    <div class="header-container">
+        <div class="centered-text">
+            Apex-domain
+        </div>
+        <span class="sub-text">under construction</span>
     </div>
 
     <div class="bottom-right-text">
