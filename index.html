@@ -43,10 +43,31 @@
             margin-top: 5px;
         }
 
-        .bottom-right-text {
+        /* NEW: Added wrapper to handle the link alignment */
+        .bottom-right-wrapper {
             position: absolute;
             bottom: 20px;
-            right: 20px; 
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* This locks the first letters to the left */
+        }
+
+        .stacked-links {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 4px;
+        }
+
+        .stacked-links a {
+            text-decoration: none;
+            color: black;
+            font-size: 0.65rem; /* Smaller than the credit text */
+            margin-bottom: 2px;
+        }
+
+        .bottom-right-text {
+            /* Position absolute removed here as it's now handled by the wrapper */
             color: black;
             font-size: 0.8rem;
             font-weight: normal;
@@ -62,8 +83,15 @@
         <span class="sub-text">under construction</span>
     </div>
 
-    <div class="bottom-right-text">
-        Portfolio website by Teng
+    <div class="bottom-right-wrapper">
+        <div class="stacked-links">
+            <a href="#">/cd Apex</a>
+            <a href="#">/cd Sub-1</a>
+            <a href="#">/cd Sub-2</a>
+        </div>
+        <div class="bottom-right-text">
+            Portfolio website by Teng
+        </div>
     </div>
 
 </body>
