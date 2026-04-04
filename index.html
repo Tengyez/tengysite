@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homelab</title>
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
     <style>
         body {
             margin: 0;
@@ -15,6 +21,7 @@
             font-family: sans-serif;
         }
 
+        /* Container for the main center content */
         .header-container {
             text-align: center;
         }
@@ -26,6 +33,7 @@
             margin: 0;
         }
 
+        /* Small text under Apex-domain */
         .sub-text {
             font-size: 0.75rem;
             color: #666;
@@ -35,34 +43,10 @@
             margin-top: 5px;
         }
 
-        /* Container for bottom-right elements */
-        .bottom-right-container {
+        .bottom-right-text {
             position: absolute;
             bottom: 20px;
-            right: 20px;
-            text-align: right;
-        }
-
-        /* Stacked links styling */
-        .stacked-links {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 8px; /* Gap between links and credit text */
-        }
-
-        .stacked-links a {
-            text-decoration: none;
-            color: black;
-            font-size: 0.7rem; /* Slightly smaller than the credit text */
-            margin-bottom: 2px;
-            font-weight: normal;
-        }
-
-        .stacked-links a:hover {
-            text-decoration: underline;
-        }
-
-        .bottom-right-text {
+            right: 20px; 
             color: black;
             font-size: 0.8rem;
             font-weight: normal;
@@ -75,18 +59,17 @@
         <div class="centered-text">
             Apex-domain
         </div>
+                <div class="stacked-links">
+            <a href="https://www.tengy.site">/cd apex </a>
+            <a href="https://www.sub.tengy.site">/cd sub-1</a>
+            <a href="https://www.fun.tengy.site">/cd sub-2</a>
+        </div>
+
         <span class="sub-text">under construction</span>
     </div>
 
-    <div class="bottom-right-container">
-        <div class="stacked-links">
-            <a href="www.tengy.site">/cd apex </a>
-            <a href="www.sub.tengy.site">/cd sub-1</a>
-            <a href="www.fun.tengy.site">/cd sub-2</a>
-        </div>
-        <div class="bottom-right-text">
-            Portfolio website by Teng
-        </div>
+    <div class="bottom-right-text">
+        Portfolio website by Teng
     </div>
 
 </body>
