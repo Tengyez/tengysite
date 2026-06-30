@@ -39,7 +39,7 @@
             80% { transform: translate(3px,3px) rotate(0.2deg); }
             100% { transform: translate(0,0); }
         }
-        body.shaking { animation: shakeit 0.3s ease-in-out; }
+        .shaking { animation: shakeit 0.3s ease-in-out; }
         #crack-canvas {
             position: fixed;
             inset: 0;
@@ -209,9 +209,11 @@
         }
 
         function shake() {
-            document.body.classList.remove('shaking');
-            void document.body.offsetWidth;
-            document.body.classList.add('shaking');
+            [canvas, nyanCanvas, document.querySelector('.viewport-fixed')].forEach(el => {
+                el.classList.remove('shaking');
+                void el.offsetWidth;
+                el.classList.add('shaking');
+            });
         }
 
         document.addEventListener('click', (e) => {
